@@ -10,11 +10,12 @@ class MetabolicCore: public QObject{
         explicit MetabolicCore(QObject *parent = nullptr);
         ~MetabolicCore();
 
-        void countBMR(QString userSex, double userBodyweight, double userHeight, int userAge);
-        void countTDEE(int BMR, int activityCoefficient);
-        void countDelta(int TDEE, QString goal);
+        void countBMR(bool userSex, double userBodyweight, double userHeight, int userAge);
+        void countTDEE(double activityCoefficient);
+        void countDelta(int goal);
+        void countMacros(int userBodyWeight, double activityCoefficient);
 
-        void countMacros(int delta, int userBodyWeight, double activityCoefficient);
+        void calculateNorm(bool userSex, double userBodyWeight, double userHeight, int userAge, double activityCoefficient, int goal);
 
     private:
         double activityCoefficient;

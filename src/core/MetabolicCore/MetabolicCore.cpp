@@ -14,29 +14,29 @@ MetabolicCore::MetabolicCore(QObject *parent) :QObject(parent){
 
 MetabolicCore::~MetabolicCore(){}
 
-MetabolicCore::countBMR(QString userSex, double userBodyWeight, double userHeight, int userAge){
-    if(userSex == "male"){
+MetabolicCore::countBMR(bool userSex, double userBodyWeight, double userHeight, int userAge){
+    if(userSex == true){
         BMR = 10 * userBodyWeight + 6.25 * userHeight + 5 * userAge + 5;
-    } else if (userSex = "female"){
+    } else if (userSex = false){
         BMR = 10 * userBodyWeight + 6.25 * userHeight + 5 * userAge - 161;
     }
 }
 
-MetabolicCore::countTDEE(int BMR, int activityCoefficient){
+MetabolicCore::countTDEE(double activityCoefficient){
     TDEE = BMR * activityCoefficient;
 }
 
-MetabolicCore::countDelta(int TDEE, QString goal){
-    if(goal == "deficit"){
+MetabolicCore::countDelta(int goal){
+    if(goal < 0){
         delta = TDEE - TDEE * 0.15;
-    } else if (goal == "proficit"){
+    } else if (goal > 0){
         delta = TDEE + TDEE * 0.15;
-    } else if (goal == "maintain"){
+    } else if (goal == 0){
         delta = TDEE;
     }
 }
 
-MetabolicCore::countMacros(int delta, int userBodyWeight, double activityCoefficient){
+MetabolicCore::countMacros(int userBodyWeight, double activityCoefficient){
     double proteinPerKg = 1.0;
     
     if (activityCoefficient <= 1.2) {
@@ -56,4 +56,11 @@ MetabolicCore::countMacros(int delta, int userBodyWeight, double activityCoeffic
     fat = userBodyWeight * 1.0; 
     
     carbs = (delta - (protein * 4) - (fat * 9)) / 4;
+}
+
+MetabolicCore::calculateNorm(bool userSex, double userBodyWeight, double userHeight, int userAge, double activityCoefficient, int goal){
+    countBMR(userSex, userBodyWeight, userHeight, userAge);
+    countTDEE(activityCoefficient);
+    countDelta(goal);
+    countMacros(userBodyWeight, activityCoefficient);
 }
