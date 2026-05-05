@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_Delta_kcal_FILE /home/andriy/Desktop/Projects/Delta_kcal/build/Delta_kcal)
+set(__QT_DEPLOY_TARGET_Delta_kcal_TYPE EXECUTABLE)

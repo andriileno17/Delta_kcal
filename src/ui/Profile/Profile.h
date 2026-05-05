@@ -9,6 +9,7 @@
 #include <QPushButton>
 #include <QDebug>
 #include "MetabolicCore.h"
+#include "User.h"
 
 class Profile: public QWidget{
     Q_OBJECT
@@ -20,6 +21,7 @@ class Profile: public QWidget{
 
     private:
         MetabolicCore core;
+        User currentUser;
 
         QSpinBox *ageBox;
         QDoubleSpinBox *weightBox;

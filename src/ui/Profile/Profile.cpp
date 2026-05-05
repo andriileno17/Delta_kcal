@@ -1,4 +1,6 @@
 #include "Profile.h"
+#include <QMessageBox>
+#include <QString>
 
 Profile::Profile(QWidget *parent) :QWidget(parent){
     ageBox = new QSpinBox(this);
@@ -57,18 +59,28 @@ Profile::Profile(QWidget *parent) :QWidget(parent){
 }
 
 void Profile::onButtonClicked(){
- bool userSex = sexBox->currentData().toBool();
-    double userBodyWeight = weightBox->value();
-    double userHeight = heightBox->value();
-    int userAge = ageBox->value();
-    double activityCoefficient = activityBox->currentData().toDouble();
-    int goal = goalBox->currentData().toInt();
+    button->setText("Рахую...");
 
-    core.calculateNorm(userSex, userBodyWeight, userHeight, userAge, activityCoefficient, goal);
+    currentUser.setSex(sexBox->currentData().toBool());
+    currentUser.setBodyWeight(weightBox->value());
+    currentUser.setHeight(heightBox->value());
+    currentUser.setAge(ageBox->value());
+    currentUser.setActivityCoefficient(activityBox->currentData().toDouble());
+    currentUser.setGoal(goalBox->currentData().toInt());
 
-    qDebug() << "Розрахунок завершено!";
-    qDebug() << "Калорії:" << core.delta;
-    qDebug() << "Білки:" << core.protein;
-    qDebug() << "Жири:" << core.fat;
-    qDebug() << "Вуглеводи:" << core.carbs;
+    core.calculateNorm(currentUser);
+
+    QString resultText = QString("Розрахунок завершено!\n\n"
+                                 "Калорії: %1 ккал\n"
+                                 "Білки: %2 г\n"
+                                 "Жири: %3 г\n"
+                                 "Вуглеводи: %4 г")
+                                 .arg(core.getDelta())
+                                 .arg(core.getProtein())
+                                 .arg(core.getFat())
+                                 .arg(core.getCarbs());
+
+    QMessageBox::information(this, "Твої КБЖВ", resultText);
+
+    button->setText("Розрахувати норму");
 }

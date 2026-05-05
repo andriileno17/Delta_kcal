@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QString>
+#include "User.h"
 
 class MetabolicCore: public QObject{
     Q_OBJECT
@@ -10,16 +11,19 @@ class MetabolicCore: public QObject{
         explicit MetabolicCore(QObject *parent = nullptr);
         ~MetabolicCore();
 
-        void countBMR(bool userSex, double userBodyweight, double userHeight, int userAge);
-        void countTDEE(double activityCoefficient);
-        void countDelta(int goal);
-        void countMacros(int userBodyWeight, double activityCoefficient);
+        void countBMR(User& user);
+        void countTDEE(User& user);
+        void countDelta(User& user);
+        void countMacros(User& user);
 
-        void calculateNorm(bool userSex, double userBodyWeight, double userHeight, int userAge, double activityCoefficient, int goal);
+        void calculateNorm(User& user);
+
+        int getDelta() const;
+        int getProtein() const;
+        int getFat() const;
+        int getCarbs() const;
 
     private:
-        double activityCoefficient;
-
         int BMR;
         int TDEE;
         int delta;

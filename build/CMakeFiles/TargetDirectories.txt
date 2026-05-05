@@ -1,0 +1,5 @@
+/home/andriy/Desktop/Projects/Delta_kcal/build/CMakeFiles/Delta_kcal.dir
+/home/andriy/Desktop/Projects/Delta_kcal/build/CMakeFiles/edit_cache.dir
+/home/andriy/Desktop/Projects/Delta_kcal/build/CMakeFiles/rebuild_cache.dir
+/home/andriy/Desktop/Projects/Delta_kcal/build/CMakeFiles/Delta_kcal_autogen_timestamp_deps.dir
+/home/andriy/Desktop/Projects/Delta_kcal/build/CMakeFiles/Delta_kcal_autogen.dir
