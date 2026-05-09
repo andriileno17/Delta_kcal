@@ -3,6 +3,8 @@
 #include <QString>
 
 Profile::Profile(QWidget *parent) :QWidget(parent){
+    nameBox = new QLineEdit(this);
+
     ageBox = new QSpinBox(this);
 
     ageBox->setRange(0, 100);
@@ -36,31 +38,36 @@ Profile::Profile(QWidget *parent) :QWidget(parent){
 
     goalBox->addItem("Схуднути", -15);
     goalBox->addItem("Підтримувати вагу", 0);
-    goalBox->addItem("Набрати вагу", 15);   
+    goalBox->addItem("Набрати вагу", 15);
 
-    button = new QPushButton("Розрахувати норму", this);
+    calculateButton = new QPushButton("Розрахувати норму", this);
+    backButton = new QPushButton("Назад", this);
 
     profileLayout = new QFormLayout(this);
 
     this->resize(400, 500);
     this->setWindowTitle("My Profile");
 
+    profileLayout->addRow("Ім'я:", nameBox);
     profileLayout->addRow("Стать:", sexBox);
     profileLayout->addRow("Вік:", ageBox);
     profileLayout->addRow("Ріст (см):", heightBox);
     profileLayout->addRow("Вага (кг):", weightBox);
     profileLayout->addRow("Рівень активності:", activityBox);
     profileLayout->addRow("Ціль:", goalBox);
-    profileLayout->addRow(button);
+    profileLayout->addRow(calculateButton);
+    profileLayout->addRow(backButton);
 
     this->setLayout(profileLayout);
 
-    connect(button, &QPushButton::clicked, this, &Profile::onButtonClicked);
+    connect(calculateButton, &QPushButton::clicked, this, &Profile::onButtonClicked);
+    connect(backButton, &QPushButton::clicked, this, [this](){ emit backRequested(); });
 }
 
 void Profile::onButtonClicked(){
-    button->setText("Рахую...");
+    calculateButton->setText("Рахую...");
 
+    currentUser.setUserName(nameBox->text());
     currentUser.setSex(sexBox->currentData().toBool());
     currentUser.setBodyWeight(weightBox->value());
     currentUser.setHeight(heightBox->value());
@@ -70,17 +77,45 @@ void Profile::onButtonClicked(){
 
     core.calculateNorm(currentUser);
 
+    dbManager.setupDataBase();
+    QString saveStatus = dbManager.saveUser(currentUser);
+
     QString resultText = QString("Розрахунок завершено!\n\n"
                                  "Калорії: %1 ккал\n"
                                  "Білки: %2 г\n"
                                  "Жири: %3 г\n"
-                                 "Вуглеводи: %4 г")
+                                 "Вуглеводи: %4 г\n\n"
+                                 "СТАТУС БАЗИ: %5")
                                  .arg(core.getDelta())
                                  .arg(core.getProtein())
                                  .arg(core.getFat())
-                                 .arg(core.getCarbs());
+                                 .arg(core.getCarbs())
+                                 .arg(saveStatus == "OK" ? "УСПІШНО ЗБЕРЕЖЕНО ✅" : saveStatus);
 
     QMessageBox::information(this, "Твої КБЖВ", resultText);
 
-    button->setText("Розрахувати норму");
+    calculateButton->setText("Розрахувати норму");
+}
+
+void Profile::loadDataToUi(){
+    nameBox->setText(currentUser.getUserName());
+    ageBox->setValue(currentUser.getAge());
+    heightBox->setValue(currentUser.getHeight());
+    weightBox->setValue(currentUser.getBodyWeight());
+
+    int sexIndex = sexBox->findData(currentUser.getSex());
+    if (sexIndex != -1) sexBox->setCurrentIndex(sexIndex);
+
+    int activityIndex = activityBox->findData(currentUser.getActivityCoefficient());
+    if (activityIndex != -1) activityBox->setCurrentIndex(activityIndex);
+
+    int goalIndex = goalBox->findData(currentUser.getGoal());
+    if (goalIndex != -1) goalBox->setCurrentIndex(goalIndex);
+}
+
+void Profile::loadUserFromDB(int userId) {
+    dbManager.setupDataBase();
+    if (dbManager.loadUser(currentUser, userId)) {
+        loadDataToUi();
+    }
 }

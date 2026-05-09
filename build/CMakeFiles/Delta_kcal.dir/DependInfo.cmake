@@ -10,10 +10,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "Delta_kcal_autogen/timestamp" "custom" "Delta_kcal_autogen/deps"
   "/home/andriy/Desktop/Projects/Delta_kcal/build/Delta_kcal_autogen/mocs_compilation.cpp" "CMakeFiles/Delta_kcal.dir/Delta_kcal_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/Delta_kcal.dir/Delta_kcal_autogen/mocs_compilation.cpp.o.d"
+  "/home/andriy/Desktop/Projects/Delta_kcal/src/core/DataBaseManager/DataBaseManager.cpp" "CMakeFiles/Delta_kcal.dir/src/core/DataBaseManager/DataBaseManager.cpp.o" "gcc" "CMakeFiles/Delta_kcal.dir/src/core/DataBaseManager/DataBaseManager.cpp.o.d"
   "/home/andriy/Desktop/Projects/Delta_kcal/src/core/MetabolicCore/MetabolicCore.cpp" "CMakeFiles/Delta_kcal.dir/src/core/MetabolicCore/MetabolicCore.cpp.o" "gcc" "CMakeFiles/Delta_kcal.dir/src/core/MetabolicCore/MetabolicCore.cpp.o.d"
   "/home/andriy/Desktop/Projects/Delta_kcal/src/core/User/User.cpp" "CMakeFiles/Delta_kcal.dir/src/core/User/User.cpp.o" "gcc" "CMakeFiles/Delta_kcal.dir/src/core/User/User.cpp.o.d"
   "/home/andriy/Desktop/Projects/Delta_kcal/src/main.cpp" "CMakeFiles/Delta_kcal.dir/src/main.cpp.o" "gcc" "CMakeFiles/Delta_kcal.dir/src/main.cpp.o.d"
+  "/home/andriy/Desktop/Projects/Delta_kcal/src/ui/MainWindow/MainWindow.cpp" "CMakeFiles/Delta_kcal.dir/src/ui/MainWindow/MainWindow.cpp.o" "gcc" "CMakeFiles/Delta_kcal.dir/src/ui/MainWindow/MainWindow.cpp.o.d"
   "/home/andriy/Desktop/Projects/Delta_kcal/src/ui/Profile/Profile.cpp" "CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.o" "gcc" "CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.o.d"
+  "/home/andriy/Desktop/Projects/Delta_kcal/src/ui/StartScreen/StartScreen.cpp" "CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.o" "gcc" "CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.o.d"
+  "/home/andriy/Desktop/Projects/Delta_kcal/src/ui/UserSelectionScreen/UserSelectionScreen.cpp" "CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o" "gcc" "CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o.d"
   "" "Delta_kcal" "gcc" "CMakeFiles/Delta_kcal.dir/link.d"
   )
 

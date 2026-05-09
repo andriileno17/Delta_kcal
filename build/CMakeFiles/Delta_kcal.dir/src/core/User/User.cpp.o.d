@@ -278,4 +278,5 @@ CMakeFiles/Delta_kcal.dir/src/core/User/User.cpp.o: \
  /usr/include/qt6/QtCore/qobject_impl.h \
  /usr/include/qt6/QtCore/qbindingstorage.h /usr/include/c++/15/chrono \
  /usr/include/c++/15/bits/chrono.h /usr/include/c++/15/ratio \
- /usr/include/c++/15/ctime
+ /usr/include/c++/15/ctime /usr/include/qt6/QtCore/QString \
+ /usr/include/qt6/QtCore/qstring.h

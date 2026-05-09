@@ -179,6 +179,30 @@ Delta_kcal_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delta_kcal.dir/build.make CMakeFiles/Delta_kcal.dir/Delta_kcal_autogen/mocs_compilation.cpp.s
 .PHONY : Delta_kcal_autogen/mocs_compilation.cpp.s
 
+src/core/DataBaseManager/DataBaseManager.o: src/core/DataBaseManager/DataBaseManager.cpp.o
+.PHONY : src/core/DataBaseManager/DataBaseManager.o
+
+# target to build an object file
+src/core/DataBaseManager/DataBaseManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delta_kcal.dir/build.make CMakeFiles/Delta_kcal.dir/src/core/DataBaseManager/DataBaseManager.cpp.o
+.PHONY : src/core/DataBaseManager/DataBaseManager.cpp.o
+
+src/core/DataBaseManager/DataBaseManager.i: src/core/DataBaseManager/DataBaseManager.cpp.i
+.PHONY : src/core/DataBaseManager/DataBaseManager.i
+
+# target to preprocess a source file
+src/core/DataBaseManager/DataBaseManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delta_kcal.dir/build.make CMakeFiles/Delta_kcal.dir/src/core/DataBaseManager/DataBaseManager.cpp.i
+.PHONY : src/core/DataBaseManager/DataBaseManager.cpp.i
+
+src/core/DataBaseManager/DataBaseManager.s: src/core/DataBaseManager/DataBaseManager.cpp.s
+.PHONY : src/core/DataBaseManager/DataBaseManager.s
+
+# target to generate assembly for a file
+src/core/DataBaseManager/DataBaseManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delta_kcal.dir/build.make CMakeFiles/Delta_kcal.dir/src/core/DataBaseManager/DataBaseManager.cpp.s
+.PHONY : src/core/DataBaseManager/DataBaseManager.cpp.s
+
 src/core/MetabolicCore/MetabolicCore.o: src/core/MetabolicCore/MetabolicCore.cpp.o
 .PHONY : src/core/MetabolicCore/MetabolicCore.o
 
@@ -251,6 +275,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delta_kcal.dir/build.make CMakeFiles/Delta_kcal.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/ui/MainWindow/MainWindow.o: src/ui/MainWindow/MainWindow.cpp.o
+.PHONY : src/ui/MainWindow/MainWindow.o
+
+# target to build an object file
+src/ui/MainWindow/MainWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delta_kcal.dir/build.make CMakeFiles/Delta_kcal.dir/src/ui/MainWindow/MainWindow.cpp.o
+.PHONY : src/ui/MainWindow/MainWindow.cpp.o
+
+src/ui/MainWindow/MainWindow.i: src/ui/MainWindow/MainWindow.cpp.i
+.PHONY : src/ui/MainWindow/MainWindow.i
+
+# target to preprocess a source file
+src/ui/MainWindow/MainWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delta_kcal.dir/build.make CMakeFiles/Delta_kcal.dir/src/ui/MainWindow/MainWindow.cpp.i
+.PHONY : src/ui/MainWindow/MainWindow.cpp.i
+
+src/ui/MainWindow/MainWindow.s: src/ui/MainWindow/MainWindow.cpp.s
+.PHONY : src/ui/MainWindow/MainWindow.s
+
+# target to generate assembly for a file
+src/ui/MainWindow/MainWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delta_kcal.dir/build.make CMakeFiles/Delta_kcal.dir/src/ui/MainWindow/MainWindow.cpp.s
+.PHONY : src/ui/MainWindow/MainWindow.cpp.s
+
 src/ui/Profile/Profile.o: src/ui/Profile/Profile.cpp.o
 .PHONY : src/ui/Profile/Profile.o
 
@@ -275,6 +323,54 @@ src/ui/Profile/Profile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delta_kcal.dir/build.make CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.s
 .PHONY : src/ui/Profile/Profile.cpp.s
 
+src/ui/StartScreen/StartScreen.o: src/ui/StartScreen/StartScreen.cpp.o
+.PHONY : src/ui/StartScreen/StartScreen.o
+
+# target to build an object file
+src/ui/StartScreen/StartScreen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delta_kcal.dir/build.make CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.o
+.PHONY : src/ui/StartScreen/StartScreen.cpp.o
+
+src/ui/StartScreen/StartScreen.i: src/ui/StartScreen/StartScreen.cpp.i
+.PHONY : src/ui/StartScreen/StartScreen.i
+
+# target to preprocess a source file
+src/ui/StartScreen/StartScreen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delta_kcal.dir/build.make CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.i
+.PHONY : src/ui/StartScreen/StartScreen.cpp.i
+
+src/ui/StartScreen/StartScreen.s: src/ui/StartScreen/StartScreen.cpp.s
+.PHONY : src/ui/StartScreen/StartScreen.s
+
+# target to generate assembly for a file
+src/ui/StartScreen/StartScreen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delta_kcal.dir/build.make CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.s
+.PHONY : src/ui/StartScreen/StartScreen.cpp.s
+
+src/ui/UserSelectionScreen/UserSelectionScreen.o: src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o
+.PHONY : src/ui/UserSelectionScreen/UserSelectionScreen.o
+
+# target to build an object file
+src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delta_kcal.dir/build.make CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o
+.PHONY : src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o
+
+src/ui/UserSelectionScreen/UserSelectionScreen.i: src/ui/UserSelectionScreen/UserSelectionScreen.cpp.i
+.PHONY : src/ui/UserSelectionScreen/UserSelectionScreen.i
+
+# target to preprocess a source file
+src/ui/UserSelectionScreen/UserSelectionScreen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delta_kcal.dir/build.make CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.i
+.PHONY : src/ui/UserSelectionScreen/UserSelectionScreen.cpp.i
+
+src/ui/UserSelectionScreen/UserSelectionScreen.s: src/ui/UserSelectionScreen/UserSelectionScreen.cpp.s
+.PHONY : src/ui/UserSelectionScreen/UserSelectionScreen.s
+
+# target to generate assembly for a file
+src/ui/UserSelectionScreen/UserSelectionScreen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delta_kcal.dir/build.make CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.s
+.PHONY : src/ui/UserSelectionScreen/UserSelectionScreen.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -289,6 +385,9 @@ help:
 	@echo "... Delta_kcal_autogen/mocs_compilation.o"
 	@echo "... Delta_kcal_autogen/mocs_compilation.i"
 	@echo "... Delta_kcal_autogen/mocs_compilation.s"
+	@echo "... src/core/DataBaseManager/DataBaseManager.o"
+	@echo "... src/core/DataBaseManager/DataBaseManager.i"
+	@echo "... src/core/DataBaseManager/DataBaseManager.s"
 	@echo "... src/core/MetabolicCore/MetabolicCore.o"
 	@echo "... src/core/MetabolicCore/MetabolicCore.i"
 	@echo "... src/core/MetabolicCore/MetabolicCore.s"
@@ -298,9 +397,18 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/ui/MainWindow/MainWindow.o"
+	@echo "... src/ui/MainWindow/MainWindow.i"
+	@echo "... src/ui/MainWindow/MainWindow.s"
 	@echo "... src/ui/Profile/Profile.o"
 	@echo "... src/ui/Profile/Profile.i"
 	@echo "... src/ui/Profile/Profile.s"
+	@echo "... src/ui/StartScreen/StartScreen.o"
+	@echo "... src/ui/StartScreen/StartScreen.i"
+	@echo "... src/ui/StartScreen/StartScreen.s"
+	@echo "... src/ui/UserSelectionScreen/UserSelectionScreen.o"
+	@echo "... src/ui/UserSelectionScreen/UserSelectionScreen.i"
+	@echo "... src/ui/UserSelectionScreen/UserSelectionScreen.s"
 .PHONY : help
 
 

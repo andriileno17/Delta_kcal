@@ -6,8 +6,13 @@ Delta_kcal: \
   CMakeFiles/Delta_kcal.dir/src/main.cpp.o \
   CMakeFiles/Delta_kcal.dir/src/core/MetabolicCore/MetabolicCore.cpp.o \
   CMakeFiles/Delta_kcal.dir/src/core/User/User.cpp.o \
+  CMakeFiles/Delta_kcal.dir/src/core/DataBaseManager/DataBaseManager.cpp.o \
+  CMakeFiles/Delta_kcal.dir/src/ui/MainWindow/MainWindow.cpp.o \
+  CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.o \
   CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.o \
+  CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o \
   /usr/lib64/libQt6Widgets.so.6.10.3 \
+  /usr/lib64/libQt6Sql.so.6.10.3 \
   /usr/lib64/libQt6Gui.so.6.10.3 \
   /usr/lib64/libGLX.so \
   /usr/lib64/libOpenGL.so \
@@ -87,9 +92,19 @@ CMakeFiles/Delta_kcal.dir/src/core/MetabolicCore/MetabolicCore.cpp.o:
 
 CMakeFiles/Delta_kcal.dir/src/core/User/User.cpp.o:
 
+CMakeFiles/Delta_kcal.dir/src/core/DataBaseManager/DataBaseManager.cpp.o:
+
+CMakeFiles/Delta_kcal.dir/src/ui/MainWindow/MainWindow.cpp.o:
+
+CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.o:
+
 CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.o:
 
+CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o:
+
 /usr/lib64/libQt6Widgets.so.6.10.3:
+
+/usr/lib64/libQt6Sql.so.6.10.3:
 
 /usr/lib64/libQt6Gui.so.6.10.3:
 

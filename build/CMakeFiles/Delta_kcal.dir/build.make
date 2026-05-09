@@ -135,10 +135,52 @@ CMakeFiles/Delta_kcal.dir/src/core/User/User.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Delta_kcal.dir/src/core/User/User.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Desktop/Projects/Delta_kcal/src/core/User/User.cpp -o CMakeFiles/Delta_kcal.dir/src/core/User/User.cpp.s
 
+CMakeFiles/Delta_kcal.dir/src/core/DataBaseManager/DataBaseManager.cpp.o: CMakeFiles/Delta_kcal.dir/flags.make
+CMakeFiles/Delta_kcal.dir/src/core/DataBaseManager/DataBaseManager.cpp.o: /home/andriy/Desktop/Projects/Delta_kcal/src/core/DataBaseManager/DataBaseManager.cpp
+CMakeFiles/Delta_kcal.dir/src/core/DataBaseManager/DataBaseManager.cpp.o: CMakeFiles/Delta_kcal.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Desktop/Projects/Delta_kcal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Delta_kcal.dir/src/core/DataBaseManager/DataBaseManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Delta_kcal.dir/src/core/DataBaseManager/DataBaseManager.cpp.o -MF CMakeFiles/Delta_kcal.dir/src/core/DataBaseManager/DataBaseManager.cpp.o.d -o CMakeFiles/Delta_kcal.dir/src/core/DataBaseManager/DataBaseManager.cpp.o -c /home/andriy/Desktop/Projects/Delta_kcal/src/core/DataBaseManager/DataBaseManager.cpp
+
+CMakeFiles/Delta_kcal.dir/src/core/DataBaseManager/DataBaseManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Delta_kcal.dir/src/core/DataBaseManager/DataBaseManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Desktop/Projects/Delta_kcal/src/core/DataBaseManager/DataBaseManager.cpp > CMakeFiles/Delta_kcal.dir/src/core/DataBaseManager/DataBaseManager.cpp.i
+
+CMakeFiles/Delta_kcal.dir/src/core/DataBaseManager/DataBaseManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Delta_kcal.dir/src/core/DataBaseManager/DataBaseManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Desktop/Projects/Delta_kcal/src/core/DataBaseManager/DataBaseManager.cpp -o CMakeFiles/Delta_kcal.dir/src/core/DataBaseManager/DataBaseManager.cpp.s
+
+CMakeFiles/Delta_kcal.dir/src/ui/MainWindow/MainWindow.cpp.o: CMakeFiles/Delta_kcal.dir/flags.make
+CMakeFiles/Delta_kcal.dir/src/ui/MainWindow/MainWindow.cpp.o: /home/andriy/Desktop/Projects/Delta_kcal/src/ui/MainWindow/MainWindow.cpp
+CMakeFiles/Delta_kcal.dir/src/ui/MainWindow/MainWindow.cpp.o: CMakeFiles/Delta_kcal.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Desktop/Projects/Delta_kcal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Delta_kcal.dir/src/ui/MainWindow/MainWindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Delta_kcal.dir/src/ui/MainWindow/MainWindow.cpp.o -MF CMakeFiles/Delta_kcal.dir/src/ui/MainWindow/MainWindow.cpp.o.d -o CMakeFiles/Delta_kcal.dir/src/ui/MainWindow/MainWindow.cpp.o -c /home/andriy/Desktop/Projects/Delta_kcal/src/ui/MainWindow/MainWindow.cpp
+
+CMakeFiles/Delta_kcal.dir/src/ui/MainWindow/MainWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Delta_kcal.dir/src/ui/MainWindow/MainWindow.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Desktop/Projects/Delta_kcal/src/ui/MainWindow/MainWindow.cpp > CMakeFiles/Delta_kcal.dir/src/ui/MainWindow/MainWindow.cpp.i
+
+CMakeFiles/Delta_kcal.dir/src/ui/MainWindow/MainWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Delta_kcal.dir/src/ui/MainWindow/MainWindow.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Desktop/Projects/Delta_kcal/src/ui/MainWindow/MainWindow.cpp -o CMakeFiles/Delta_kcal.dir/src/ui/MainWindow/MainWindow.cpp.s
+
+CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.o: CMakeFiles/Delta_kcal.dir/flags.make
+CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.o: /home/andriy/Desktop/Projects/Delta_kcal/src/ui/StartScreen/StartScreen.cpp
+CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.o: CMakeFiles/Delta_kcal.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Desktop/Projects/Delta_kcal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.o -MF CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.o.d -o CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.o -c /home/andriy/Desktop/Projects/Delta_kcal/src/ui/StartScreen/StartScreen.cpp
+
+CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Desktop/Projects/Delta_kcal/src/ui/StartScreen/StartScreen.cpp > CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.i
+
+CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Desktop/Projects/Delta_kcal/src/ui/StartScreen/StartScreen.cpp -o CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.s
+
 CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.o: CMakeFiles/Delta_kcal.dir/flags.make
 CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.o: /home/andriy/Desktop/Projects/Delta_kcal/src/ui/Profile/Profile.cpp
 CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.o: CMakeFiles/Delta_kcal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Desktop/Projects/Delta_kcal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Desktop/Projects/Delta_kcal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.o -MF CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.o.d -o CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.o -c /home/andriy/Desktop/Projects/Delta_kcal/src/ui/Profile/Profile.cpp
 
 CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.i: cmake_force
@@ -149,13 +191,31 @@ CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Desktop/Projects/Delta_kcal/src/ui/Profile/Profile.cpp -o CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.s
 
+CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o: CMakeFiles/Delta_kcal.dir/flags.make
+CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o: /home/andriy/Desktop/Projects/Delta_kcal/src/ui/UserSelectionScreen/UserSelectionScreen.cpp
+CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o: CMakeFiles/Delta_kcal.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andriy/Desktop/Projects/Delta_kcal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o -MF CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o.d -o CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o -c /home/andriy/Desktop/Projects/Delta_kcal/src/ui/UserSelectionScreen/UserSelectionScreen.cpp
+
+CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andriy/Desktop/Projects/Delta_kcal/src/ui/UserSelectionScreen/UserSelectionScreen.cpp > CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.i
+
+CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andriy/Desktop/Projects/Delta_kcal/src/ui/UserSelectionScreen/UserSelectionScreen.cpp -o CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.s
+
 # Object files for target Delta_kcal
 Delta_kcal_OBJECTS = \
 "CMakeFiles/Delta_kcal.dir/Delta_kcal_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/Delta_kcal.dir/src/main.cpp.o" \
 "CMakeFiles/Delta_kcal.dir/src/core/MetabolicCore/MetabolicCore.cpp.o" \
 "CMakeFiles/Delta_kcal.dir/src/core/User/User.cpp.o" \
-"CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.o"
+"CMakeFiles/Delta_kcal.dir/src/core/DataBaseManager/DataBaseManager.cpp.o" \
+"CMakeFiles/Delta_kcal.dir/src/ui/MainWindow/MainWindow.cpp.o" \
+"CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.o" \
+"CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.o" \
+"CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o"
 
 # External object files for target Delta_kcal
 Delta_kcal_EXTERNAL_OBJECTS =
@@ -164,16 +224,21 @@ Delta_kcal: CMakeFiles/Delta_kcal.dir/Delta_kcal_autogen/mocs_compilation.cpp.o
 Delta_kcal: CMakeFiles/Delta_kcal.dir/src/main.cpp.o
 Delta_kcal: CMakeFiles/Delta_kcal.dir/src/core/MetabolicCore/MetabolicCore.cpp.o
 Delta_kcal: CMakeFiles/Delta_kcal.dir/src/core/User/User.cpp.o
+Delta_kcal: CMakeFiles/Delta_kcal.dir/src/core/DataBaseManager/DataBaseManager.cpp.o
+Delta_kcal: CMakeFiles/Delta_kcal.dir/src/ui/MainWindow/MainWindow.cpp.o
+Delta_kcal: CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.o
 Delta_kcal: CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.o
+Delta_kcal: CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o
 Delta_kcal: CMakeFiles/Delta_kcal.dir/build.make
 Delta_kcal: CMakeFiles/Delta_kcal.dir/compiler_depend.ts
 Delta_kcal: /usr/lib64/libQt6Widgets.so.6.10.3
+Delta_kcal: /usr/lib64/libQt6Sql.so.6.10.3
 Delta_kcal: /usr/lib64/libQt6Gui.so.6.10.3
 Delta_kcal: /usr/lib64/libGLX.so
 Delta_kcal: /usr/lib64/libOpenGL.so
 Delta_kcal: /usr/lib64/libQt6Core.so.6.10.3
 Delta_kcal: CMakeFiles/Delta_kcal.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/andriy/Desktop/Projects/Delta_kcal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Delta_kcal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/andriy/Desktop/Projects/Delta_kcal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Delta_kcal"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Delta_kcal.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

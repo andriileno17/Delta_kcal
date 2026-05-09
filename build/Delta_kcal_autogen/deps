@@ -4,13 +4,21 @@ Delta_kcal_autogen/timestamp: \
 	/home/andriy/Desktop/Projects/Delta_kcal/build/CMakeFiles/3.31.11/CMakeCXXCompiler.cmake \
 	/home/andriy/Desktop/Projects/Delta_kcal/build/CMakeFiles/3.31.11/CMakeSystem.cmake \
 	/home/andriy/Desktop/Projects/Delta_kcal/build/Delta_kcal_autogen/moc_predefs.h \
+	/home/andriy/Desktop/Projects/Delta_kcal/src/core/DataBaseManager/DataBaseManager.cpp \
+	/home/andriy/Desktop/Projects/Delta_kcal/src/core/DataBaseManager/DataBaseManager.h \
 	/home/andriy/Desktop/Projects/Delta_kcal/src/core/MetabolicCore/MetabolicCore.cpp \
 	/home/andriy/Desktop/Projects/Delta_kcal/src/core/MetabolicCore/MetabolicCore.h \
 	/home/andriy/Desktop/Projects/Delta_kcal/src/core/User/User.cpp \
 	/home/andriy/Desktop/Projects/Delta_kcal/src/core/User/User.h \
 	/home/andriy/Desktop/Projects/Delta_kcal/src/main.cpp \
+	/home/andriy/Desktop/Projects/Delta_kcal/src/ui/MainWindow/MainWindow.cpp \
+	/home/andriy/Desktop/Projects/Delta_kcal/src/ui/MainWindow/MainWindow.h \
 	/home/andriy/Desktop/Projects/Delta_kcal/src/ui/Profile/Profile.cpp \
 	/home/andriy/Desktop/Projects/Delta_kcal/src/ui/Profile/Profile.h \
+	/home/andriy/Desktop/Projects/Delta_kcal/src/ui/StartScreen/StartScreen.cpp \
+	/home/andriy/Desktop/Projects/Delta_kcal/src/ui/StartScreen/StartScreen.h \
+	/home/andriy/Desktop/Projects/Delta_kcal/src/ui/UserSelectionScreen/UserSelectionScreen.cpp \
+	/home/andriy/Desktop/Projects/Delta_kcal/src/ui/UserSelectionScreen/UserSelectionScreen.h \
 	/usr/include/alloca.h \
 	/usr/include/asm-generic/bitsperlong.h \
 	/usr/include/asm-generic/errno-base.h \
@@ -277,6 +285,7 @@ Delta_kcal_autogen/timestamp: \
 	/usr/include/locale.h \
 	/usr/include/pthread.h \
 	/usr/include/qt6/QtCore/QDebug \
+	/usr/include/qt6/QtCore/QMap \
 	/usr/include/qt6/QtCore/QObject \
 	/usr/include/qt6/QtCore/QString \
 	/usr/include/qt6/QtCore/q17memory.h \
@@ -332,6 +341,7 @@ Delta_kcal_autogen/timestamp: \
 	/usr/include/qt6/QtCore/qhash.h \
 	/usr/include/qt6/QtCore/qhashfunctions.h \
 	/usr/include/qt6/QtCore/qiodevicebase.h \
+	/usr/include/qt6/QtCore/qitemselectionmodel.h \
 	/usr/include/qt6/QtCore/qiterable.h \
 	/usr/include/qt6/QtCore/qiterator.h \
 	/usr/include/qt6/QtCore/qlatin1stringview.h \
@@ -344,6 +354,7 @@ Delta_kcal_autogen/timestamp: \
 	/usr/include/qt6/QtCore/qmargins.h \
 	/usr/include/qt6/QtCore/qmath.h \
 	/usr/include/qt6/QtCore/qmetacontainer.h \
+	/usr/include/qt6/QtCore/qmetaobject.h \
 	/usr/include/qt6/QtCore/qmetatype.h \
 	/usr/include/qt6/QtCore/qminmax.h \
 	/usr/include/qt6/QtCore/qnamespace.h \
@@ -404,6 +415,7 @@ Delta_kcal_autogen/timestamp: \
 	/usr/include/qt6/QtCore/qtversionchecks.h \
 	/usr/include/qt6/QtCore/qtypeinfo.h \
 	/usr/include/qt6/QtCore/qtypes.h \
+	/usr/include/qt6/QtCore/qurl.h \
 	/usr/include/qt6/QtCore/qutf8stringview.h \
 	/usr/include/qt6/QtCore/qvariant.h \
 	/usr/include/qt6/QtCore/qvarlengtharray.h \
@@ -424,27 +436,48 @@ Delta_kcal_autogen/timestamp: \
 	/usr/include/qt6/QtGui/qkeysequence.h \
 	/usr/include/qt6/QtGui/qpaintdevice.h \
 	/usr/include/qt6/QtGui/qpalette.h \
+	/usr/include/qt6/QtGui/qpen.h \
 	/usr/include/qt6/QtGui/qpixelformat.h \
 	/usr/include/qt6/QtGui/qpixmap.h \
 	/usr/include/qt6/QtGui/qpolygon.h \
 	/usr/include/qt6/QtGui/qregion.h \
 	/usr/include/qt6/QtGui/qrgb.h \
 	/usr/include/qt6/QtGui/qrgba64.h \
+	/usr/include/qt6/QtGui/qtextcursor.h \
+	/usr/include/qt6/QtGui/qtextdocument.h \
+	/usr/include/qt6/QtGui/qtextformat.h \
+	/usr/include/qt6/QtGui/qtextoption.h \
 	/usr/include/qt6/QtGui/qtgui-config.h \
 	/usr/include/qt6/QtGui/qtguiexports.h \
 	/usr/include/qt6/QtGui/qtguiglobal.h \
 	/usr/include/qt6/QtGui/qtransform.h \
 	/usr/include/qt6/QtGui/qvalidator.h \
 	/usr/include/qt6/QtGui/qwindowdefs.h \
+	/usr/include/qt6/QtSql/QSqlDatabase \
+	/usr/include/qt6/QtSql/QSqlError \
+	/usr/include/qt6/QtSql/QSqlQuery \
+	/usr/include/qt6/QtSql/qsqldatabase.h \
+	/usr/include/qt6/QtSql/qsqlerror.h \
+	/usr/include/qt6/QtSql/qsqlquery.h \
+	/usr/include/qt6/QtSql/qtsql-config.h \
+	/usr/include/qt6/QtSql/qtsqlexports.h \
+	/usr/include/qt6/QtSql/qtsqlglobal.h \
 	/usr/include/qt6/QtWidgets/QComboBox \
 	/usr/include/qt6/QtWidgets/QDoubleSpinBox \
 	/usr/include/qt6/QtWidgets/QFormLayout \
 	/usr/include/qt6/QtWidgets/QLayout \
+	/usr/include/qt6/QtWidgets/QLineEdit \
+	/usr/include/qt6/QtWidgets/QListWidget \
+	/usr/include/qt6/QtWidgets/QMainWindow \
 	/usr/include/qt6/QtWidgets/QPushButton \
 	/usr/include/qt6/QtWidgets/QSpinBox \
+	/usr/include/qt6/QtWidgets/QStackedWidget \
+	/usr/include/qt6/QtWidgets/QVBoxLayout \
 	/usr/include/qt6/QtWidgets/QWidget \
 	/usr/include/qt6/QtWidgets/qabstractbutton.h \
 	/usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
+	/usr/include/qt6/QtWidgets/qabstractitemview.h \
+	/usr/include/qt6/QtWidgets/qabstractscrollarea.h \
 	/usr/include/qt6/QtWidgets/qabstractslider.h \
 	/usr/include/qt6/QtWidgets/qabstractspinbox.h \
 	/usr/include/qt6/QtWidgets/qboxlayout.h \
@@ -454,11 +487,16 @@ Delta_kcal_autogen/timestamp: \
 	/usr/include/qt6/QtWidgets/qgridlayout.h \
 	/usr/include/qt6/QtWidgets/qlayout.h \
 	/usr/include/qt6/QtWidgets/qlayoutitem.h \
+	/usr/include/qt6/QtWidgets/qlineedit.h \
+	/usr/include/qt6/QtWidgets/qlistview.h \
+	/usr/include/qt6/QtWidgets/qlistwidget.h \
+	/usr/include/qt6/QtWidgets/qmainwindow.h \
 	/usr/include/qt6/QtWidgets/qpushbutton.h \
 	/usr/include/qt6/QtWidgets/qrubberband.h \
 	/usr/include/qt6/QtWidgets/qsizepolicy.h \
 	/usr/include/qt6/QtWidgets/qslider.h \
 	/usr/include/qt6/QtWidgets/qspinbox.h \
+	/usr/include/qt6/QtWidgets/qstackedwidget.h \
 	/usr/include/qt6/QtWidgets/qstyle.h \
 	/usr/include/qt6/QtWidgets/qstyleoption.h \
 	/usr/include/qt6/QtWidgets/qtabbar.h \
@@ -744,6 +782,35 @@ Delta_kcal_autogen/timestamp: \
 	/usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake \
 	/usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake \
 	/usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6QIBaseDriverPluginAdditionalTargetInfo.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6QIBaseDriverPluginConfig.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6QIBaseDriverPluginTargets-relwithdebinfo.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6QIBaseDriverPluginTargets.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6QMYSQLDriverPluginAdditionalTargetInfo.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6QMYSQLDriverPluginConfig.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6QMYSQLDriverPluginTargets-relwithdebinfo.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6QMYSQLDriverPluginTargets.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6QODBCDriverPluginAdditionalTargetInfo.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6QODBCDriverPluginConfig.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6QODBCDriverPluginTargets-relwithdebinfo.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6QODBCDriverPluginTargets.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6QPSQLDriverPluginAdditionalTargetInfo.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6QPSQLDriverPluginConfig.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargets-relwithdebinfo.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargets.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6QSQLiteDriverPluginAdditionalTargetInfo.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6QSQLiteDriverPluginConfig.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets-relwithdebinfo.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6SqlAdditionalTargetInfo.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6SqlConfig.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6SqlConfigVersion.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6SqlConfigVersionImpl.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6SqlDependencies.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6SqlPlugins.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6SqlTargets-relwithdebinfo.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6SqlTargets.cmake \
+	/usr/lib64/cmake/Qt6Sql/Qt6SqlVersionlessAliasTargets.cmake \
 	/usr/lib64/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake \
 	/usr/lib64/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake \
 	/usr/lib64/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake \

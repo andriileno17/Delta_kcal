@@ -1,10 +1,10 @@
 #include <QApplication>
-#include "Profile.h"
+#include "MainWindow.h"
 
-int main(int argc, char *argv[]){
+int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
-
-    Profile window;
+    
+    MainWindow window;
     window.show();
 
     return app.exec();

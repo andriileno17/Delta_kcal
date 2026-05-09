@@ -493,7 +493,42 @@
 		"/usr/lib64/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake",
 		"/usr/lib64/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake",
 		"/usr/lib64/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake",
-		"/usr/lib64/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake"
+		"/usr/lib64/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6SqlConfigVersion.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6SqlConfigVersionImpl.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6SqlConfig.cmake",
+		"/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6SqlDependencies.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6SqlTargets.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6SqlTargets-relwithdebinfo.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6SqlAdditionalTargetInfo.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6SqlPlugins.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6QIBaseDriverPluginConfig.cmake",
+		"/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6QIBaseDriverPluginTargets.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6QIBaseDriverPluginTargets-relwithdebinfo.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6QIBaseDriverPluginAdditionalTargetInfo.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6QMYSQLDriverPluginConfig.cmake",
+		"/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6QMYSQLDriverPluginTargets.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6QMYSQLDriverPluginTargets-relwithdebinfo.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6QMYSQLDriverPluginAdditionalTargetInfo.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6QODBCDriverPluginConfig.cmake",
+		"/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6QODBCDriverPluginTargets.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6QODBCDriverPluginTargets-relwithdebinfo.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6QODBCDriverPluginAdditionalTargetInfo.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6QPSQLDriverPluginConfig.cmake",
+		"/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargets.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargets-relwithdebinfo.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6QPSQLDriverPluginAdditionalTargetInfo.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6QSQLiteDriverPluginConfig.cmake",
+		"/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets-relwithdebinfo.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6QSQLiteDriverPluginAdditionalTargetInfo.cmake",
+		"/usr/lib64/cmake/Qt6Sql/Qt6SqlVersionlessAliasTargets.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/andriy/Desktop/Projects/Delta_kcal",
 	"CROSS_CONFIG" : false,
@@ -501,6 +536,12 @@
 	"DEP_FILE_RULE_NAME" : "Delta_kcal_autogen/timestamp",
 	"HEADERS" : 
 	[
+		[
+			"/home/andriy/Desktop/Projects/Delta_kcal/src/core/DataBaseManager/DataBaseManager.h",
+			"MU",
+			"44WFSMY7LG/moc_DataBaseManager.cpp",
+			null
+		],
 		[
 			"/home/andriy/Desktop/Projects/Delta_kcal/src/core/MetabolicCore/MetabolicCore.h",
 			"MU",
@@ -514,16 +555,41 @@
 			null
 		],
 		[
+			"/home/andriy/Desktop/Projects/Delta_kcal/src/ui/MainWindow/MainWindow.h",
+			"MU",
+			"MH3S2VXQKY/moc_MainWindow.cpp",
+			null
+		],
+		[
 			"/home/andriy/Desktop/Projects/Delta_kcal/src/ui/Profile/Profile.h",
 			"MU",
 			"V7E7VXSNZC/moc_Profile.cpp",
+			null
+		],
+		[
+			"/home/andriy/Desktop/Projects/Delta_kcal/src/ui/StartScreen/StartScreen.h",
+			"MU",
+			"L52M4CM6L4/moc_StartScreen.cpp",
+			null
+		],
+		[
+			"/home/andriy/Desktop/Projects/Delta_kcal/src/ui/UserSelectionScreen/UserSelectionScreen.h",
+			"MU",
+			"LHQJZTSL7E/moc_UserSelectionScreen.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/home/andriy/Desktop/Projects/Delta_kcal/build/Delta_kcal_autogen/include",
 	"MOC_COMPILATION_FILE" : "/home/andriy/Desktop/Projects/Delta_kcal/build/Delta_kcal_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NO_DEBUG",
+		"QT_SQL_LIB",
+		"QT_WIDGETS_LIB"
+	],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -535,12 +601,17 @@
 	[
 		"/home/andriy/Desktop/Projects/Delta_kcal/src/core/MetabolicCore",
 		"/home/andriy/Desktop/Projects/Delta_kcal/src/core/User",
+		"/home/andriy/Desktop/Projects/Delta_kcal/src/core/DataBaseManager",
+		"/home/andriy/Desktop/Projects/Delta_kcal/src/ui/MainWindow",
+		"/home/andriy/Desktop/Projects/Delta_kcal/src/ui/StartScreen",
 		"/home/andriy/Desktop/Projects/Delta_kcal/src/ui/Profile",
+		"/home/andriy/Desktop/Projects/Delta_kcal/src/ui/UserSelectionScreen",
 		"/usr/include/qt6/QtCore",
 		"/usr/include/qt6",
 		"/usr/lib64/qt6/mkspecs/linux-g++",
 		"/usr/include/qt6/QtGui",
 		"/usr/include/qt6/QtWidgets",
+		"/usr/include/qt6/QtSql",
 		"/usr/include",
 		"/usr/include/c++/15",
 		"/usr/include/c++/15/x86_64-redhat-linux",
@@ -582,6 +653,11 @@
 	"SOURCES" : 
 	[
 		[
+			"/home/andriy/Desktop/Projects/Delta_kcal/src/core/DataBaseManager/DataBaseManager.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/andriy/Desktop/Projects/Delta_kcal/src/core/MetabolicCore/MetabolicCore.cpp",
 			"MU",
 			null
@@ -593,7 +669,22 @@
 		],
 		[ "/home/andriy/Desktop/Projects/Delta_kcal/src/main.cpp", "MU", null ],
 		[
+			"/home/andriy/Desktop/Projects/Delta_kcal/src/ui/MainWindow/MainWindow.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/andriy/Desktop/Projects/Delta_kcal/src/ui/Profile/Profile.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/andriy/Desktop/Projects/Delta_kcal/src/ui/StartScreen/StartScreen.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/andriy/Desktop/Projects/Delta_kcal/src/ui/UserSelectionScreen/UserSelectionScreen.cpp",
 			"MU",
 			null
 		]

@@ -287,15 +287,17 @@ CMakeFiles/Delta_kcal.dir/Delta_kcal_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtCore/q20algorithm.h \
  /home/andriy/Desktop/Projects/Delta_kcal/build/Delta_kcal_autogen/FFP5MIO47F/moc_User.cpp \
  /home/andriy/Desktop/Projects/Delta_kcal/build/Delta_kcal_autogen/FFP5MIO47F/../../../src/core/User/User.h \
- /home/andriy/Desktop/Projects/Delta_kcal/build/Delta_kcal_autogen/V7E7VXSNZC/moc_Profile.cpp \
- /home/andriy/Desktop/Projects/Delta_kcal/build/Delta_kcal_autogen/V7E7VXSNZC/../../../src/ui/Profile/Profile.h \
- /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/qwidget.h \
+ /home/andriy/Desktop/Projects/Delta_kcal/build/Delta_kcal_autogen/MH3S2VXQKY/moc_MainWindow.cpp \
+ /home/andriy/Desktop/Projects/Delta_kcal/build/Delta_kcal_autogen/MH3S2VXQKY/../../../src/ui/MainWindow/MainWindow.h \
+ /usr/include/qt6/QtWidgets/QMainWindow \
+ /usr/include/qt6/QtWidgets/qmainwindow.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtGui/qtguiglobal.h \
  /usr/include/qt6/QtGui/qtgui-config.h \
  /usr/include/qt6/QtGui/qtguiexports.h \
  /usr/include/qt6/QtWidgets/qtwidgets-config.h \
  /usr/include/qt6/QtWidgets/qtwidgetsexports.h \
+ /usr/include/qt6/QtWidgets/qwidget.h \
  /usr/include/qt6/QtGui/qwindowdefs.h /usr/include/qt6/QtCore/qobject.h \
  /usr/include/qt6/QtCore/qmargins.h \
  /usr/include/qt6/QtCore/qcheckedint_impl.h \
@@ -335,16 +337,27 @@ CMakeFiles/Delta_kcal.dir/Delta_kcal_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtGui/qfontvariableaxis.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/qt6/QtGui/qcursor.h /usr/include/qt6/QtGui/qbitmap.h \
+ /usr/include/qt6/QtWidgets/qtabwidget.h \
+ /usr/include/qt6/QtWidgets/QStackedWidget \
+ /usr/include/qt6/QtWidgets/qstackedwidget.h \
+ /usr/include/qt6/QtWidgets/qframe.h \
+ /home/andriy/Desktop/Projects/Delta_kcal/src/ui/StartScreen/StartScreen.h \
+ /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/qwidget.h \
+ /usr/include/qt6/QtWidgets/QPushButton \
+ /usr/include/qt6/QtWidgets/qpushbutton.h \
+ /usr/include/qt6/QtWidgets/qabstractbutton.h \
+ /usr/include/qt6/QtWidgets/QVBoxLayout \
+ /usr/include/qt6/QtWidgets/qboxlayout.h \
+ /usr/include/qt6/QtWidgets/qlayout.h \
+ /usr/include/qt6/QtWidgets/qlayoutitem.h \
+ /usr/include/qt6/QtWidgets/qboxlayout.h \
+ /usr/include/qt6/QtWidgets/qgridlayout.h \
+ /home/andriy/Desktop/Projects/Delta_kcal/src/ui/Profile/Profile.h \
  /usr/include/qt6/QtWidgets/QFormLayout \
  /usr/include/qt6/QtWidgets/qformlayout.h \
  /usr/include/qt6/QtWidgets/QLayout /usr/include/qt6/QtWidgets/qlayout.h \
- /usr/include/qt6/QtWidgets/qlayoutitem.h \
- /usr/include/qt6/QtWidgets/qboxlayout.h \
- /usr/include/qt6/QtWidgets/qlayout.h \
- /usr/include/qt6/QtWidgets/qgridlayout.h \
  /usr/include/qt6/QtWidgets/QComboBox \
  /usr/include/qt6/QtWidgets/qcombobox.h \
- /usr/include/qt6/QtWidgets/qwidget.h \
  /usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
  /usr/include/qt6/QtWidgets/qstyleoption.h \
  /usr/include/qt6/QtCore/qlocale.h \
@@ -354,15 +367,38 @@ CMakeFiles/Delta_kcal.dir/Delta_kcal_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtWidgets/qslider.h \
  /usr/include/qt6/QtWidgets/qabstractslider.h \
  /usr/include/qt6/QtWidgets/qstyle.h /usr/include/qt6/QtWidgets/qtabbar.h \
- /usr/include/qt6/QtWidgets/qtabwidget.h \
  /usr/include/qt6/QtWidgets/qrubberband.h \
- /usr/include/qt6/QtWidgets/qframe.h \
  /usr/include/qt6/QtCore/qabstractitemmodel.h \
  /usr/include/qt6/QtWidgets/QSpinBox \
  /usr/include/qt6/QtWidgets/qspinbox.h \
- /usr/include/qt6/QtWidgets/QDoubleSpinBox \
- /usr/include/qt6/QtWidgets/QPushButton \
- /usr/include/qt6/QtWidgets/qpushbutton.h \
- /usr/include/qt6/QtWidgets/qabstractbutton.h \
- /usr/include/qt6/QtCore/QDebug /usr/include/qt6/QtCore/qdebug.h \
- /home/andriy/Desktop/Projects/Delta_kcal/src/core/MetabolicCore/MetabolicCore.h
+ /usr/include/qt6/QtWidgets/QDoubleSpinBox /usr/include/qt6/QtCore/QDebug \
+ /usr/include/qt6/QtCore/qdebug.h /usr/include/qt6/QtWidgets/QLineEdit \
+ /usr/include/qt6/QtWidgets/qlineedit.h \
+ /usr/include/qt6/QtGui/qtextcursor.h \
+ /usr/include/qt6/QtGui/qtextdocument.h /usr/include/qt6/QtCore/qurl.h \
+ /usr/include/qt6/QtGui/qtextformat.h /usr/include/qt6/QtGui/qpen.h \
+ /usr/include/qt6/QtGui/qtextoption.h \
+ /home/andriy/Desktop/Projects/Delta_kcal/src/core/MetabolicCore/MetabolicCore.h \
+ /home/andriy/Desktop/Projects/Delta_kcal/src/core/DataBaseManager/DataBaseManager.h \
+ /usr/include/qt6/QtSql/QSqlDatabase \
+ /usr/include/qt6/QtSql/qsqldatabase.h \
+ /usr/include/qt6/QtSql/qtsqlglobal.h \
+ /usr/include/qt6/QtSql/qtsql-config.h \
+ /usr/include/qt6/QtSql/qtsqlexports.h \
+ /usr/include/qt6/QtCore/qmetaobject.h /usr/include/qt6/QtSql/QSqlQuery \
+ /usr/include/qt6/QtSql/qsqlquery.h /usr/include/qt6/QtSql/qsqldatabase.h \
+ /usr/include/qt6/QtSql/QSqlError /usr/include/qt6/QtSql/qsqlerror.h \
+ /usr/include/qt6/QtCore/QMap /usr/include/qt6/QtCore/qmap.h \
+ /home/andriy/Desktop/Projects/Delta_kcal/src/ui/UserSelectionScreen/UserSelectionScreen.h \
+ /usr/include/qt6/QtWidgets/QListWidget \
+ /usr/include/qt6/QtWidgets/qlistwidget.h \
+ /usr/include/qt6/QtWidgets/qlistview.h \
+ /usr/include/qt6/QtWidgets/qabstractitemview.h \
+ /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
+ /usr/include/qt6/QtCore/qitemselectionmodel.h \
+ /home/andriy/Desktop/Projects/Delta_kcal/build/Delta_kcal_autogen/V7E7VXSNZC/moc_Profile.cpp \
+ /home/andriy/Desktop/Projects/Delta_kcal/build/Delta_kcal_autogen/V7E7VXSNZC/../../../src/ui/Profile/Profile.h \
+ /home/andriy/Desktop/Projects/Delta_kcal/build/Delta_kcal_autogen/L52M4CM6L4/moc_StartScreen.cpp \
+ /home/andriy/Desktop/Projects/Delta_kcal/build/Delta_kcal_autogen/L52M4CM6L4/../../../src/ui/StartScreen/StartScreen.h \
+ /home/andriy/Desktop/Projects/Delta_kcal/build/Delta_kcal_autogen/LHQJZTSL7E/moc_UserSelectionScreen.cpp \
+ /home/andriy/Desktop/Projects/Delta_kcal/build/Delta_kcal_autogen/LHQJZTSL7E/../../../src/ui/UserSelectionScreen/UserSelectionScreen.h

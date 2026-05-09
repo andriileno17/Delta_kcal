@@ -1,20 +1,25 @@
 #ifndef PROFILE_H
 #define PROFILE_H
 
-#include <QWidget>
 #include <QFormLayout>
 #include <QComboBox>
 #include <QSpinBox>
 #include <QDoubleSpinBox>
 #include <QPushButton>
 #include <QDebug>
+#include <QLineEdit>
 #include "MetabolicCore.h"
 #include "User.h"
+#include "DataBaseManager.h"
 
 class Profile: public QWidget{
     Q_OBJECT
     public:
         explicit Profile(QWidget *parent = nullptr);
+        void loadUserFromDB(int userId);
+
+    signals:
+        void backRequested();
 
     private slots:
         void onButtonClicked();
@@ -22,16 +27,22 @@ class Profile: public QWidget{
     private:
         MetabolicCore core;
         User currentUser;
+        DataBaseManager dbManager;
 
+        QFormLayout *profileLayout;
+
+        QLineEdit *nameBox;
         QSpinBox *ageBox;
         QDoubleSpinBox *weightBox;
         QDoubleSpinBox *heightBox;
         QComboBox *activityBox;
         QComboBox *goalBox;
         QComboBox *sexBox;
-        QPushButton *button;
 
-        QFormLayout *profileLayout;
+        QPushButton *calculateButton;
+        QPushButton *backButton;
+
+        void loadDataToUi();
 };
 
 #endif
