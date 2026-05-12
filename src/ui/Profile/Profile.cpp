@@ -60,41 +60,8 @@ Profile::Profile(QWidget *parent) :QWidget(parent){
 
     this->setLayout(profileLayout);
 
-    connect(calculateButton, &QPushButton::clicked, this, &Profile::onButtonClicked);
+    connect(calculateButton, &QPushButton::clicked, this, [this](){ emit usersPageRequested(); });
     connect(backButton, &QPushButton::clicked, this, [this](){ emit backRequested(); });
-}
-
-void Profile::onButtonClicked(){
-    calculateButton->setText("Рахую...");
-
-    currentUser.setUserName(nameBox->text());
-    currentUser.setSex(sexBox->currentData().toBool());
-    currentUser.setBodyWeight(weightBox->value());
-    currentUser.setHeight(heightBox->value());
-    currentUser.setAge(ageBox->value());
-    currentUser.setActivityCoefficient(activityBox->currentData().toDouble());
-    currentUser.setGoal(goalBox->currentData().toInt());
-
-    core.calculateNorm(currentUser);
-
-    dbManager.setupDataBase();
-    QString saveStatus = dbManager.saveUser(currentUser);
-
-    QString resultText = QString("Розрахунок завершено!\n\n"
-                                 "Калорії: %1 ккал\n"
-                                 "Білки: %2 г\n"
-                                 "Жири: %3 г\n"
-                                 "Вуглеводи: %4 г\n\n"
-                                 "СТАТУС БАЗИ: %5")
-                                 .arg(core.getDelta())
-                                 .arg(core.getProtein())
-                                 .arg(core.getFat())
-                                 .arg(core.getCarbs())
-                                 .arg(saveStatus == "OK" ? "УСПІШНО ЗБЕРЕЖЕНО ✅" : saveStatus);
-
-    QMessageBox::information(this, "Твої КБЖВ", resultText);
-
-    calculateButton->setText("Розрахувати норму");
 }
 
 void Profile::loadDataToUi(){
@@ -118,4 +85,23 @@ void Profile::loadUserFromDB(int userId) {
     if (dbManager.loadUser(currentUser, userId)) {
         loadDataToUi();
     }
+}
+
+void Profile::saveUser(){
+    currentUser.setUserName(nameBox->text());
+    currentUser.setSex(sexBox->currentData().toBool());
+    currentUser.setBodyWeight(weightBox->value());
+    currentUser.setHeight(heightBox->value());
+    currentUser.setAge(ageBox->value());
+    currentUser.setActivityCoefficient(activityBox->currentData().toDouble());
+    currentUser.setGoal(goalBox->currentData().toInt());
+
+    core.calculateNorm(currentUser);
+
+    dbManager.setupDataBase();
+    dbManager.saveUser(currentUser);
+}
+
+MetabolicCore& Profile::getCore(){
+    return core;
 }

@@ -398,4 +398,51 @@ CMakeFiles/Delta_kcal.dir/src/main.cpp.o: \
  /usr/include/qt6/QtWidgets/qlistview.h \
  /usr/include/qt6/QtWidgets/qabstractitemview.h \
  /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
- /usr/include/qt6/QtCore/qitemselectionmodel.h
+ /usr/include/qt6/QtCore/qitemselectionmodel.h \
+ /home/andriy/Desktop/Projects/Delta_kcal/src/ui/UsersPage/UsersPage.h \
+ /usr/include/qt6/QtWidgets/QHBoxLayout /usr/include/qt6/QtCharts/QChart \
+ /usr/include/qt6/QtCharts/qchart.h \
+ /usr/include/qt6/QtCharts/QAbstractSeries \
+ /usr/include/qt6/QtCharts/qabstractseries.h \
+ /usr/include/qt6/QtCharts/QChartGlobal \
+ /usr/include/qt6/QtCharts/qchartglobal.h \
+ /usr/include/qt6/QtCharts/qtcharts-config.h \
+ /usr/include/qt6/QtCharts/qtchartsexports.h \
+ /usr/include/qt6/QtCharts/QAbstractAxis \
+ /usr/include/qt6/QtCharts/qabstractaxis.h /usr/include/qt6/QtGui/QPen \
+ /usr/include/qt6/QtGui/qpen.h /usr/include/qt6/QtGui/QFont \
+ /usr/include/qt6/QtGui/qfont.h /usr/include/qt6/QtCore/QVariant \
+ /usr/include/qt6/QtCore/qvariant.h /usr/include/qt6/QtCore/QObject \
+ /usr/include/qt6/QtCharts/QLegend /usr/include/qt6/QtCharts/qlegend.h \
+ /usr/include/qt6/QtWidgets/QGraphicsWidget \
+ /usr/include/qt6/QtWidgets/qgraphicswidget.h \
+ /usr/include/qt6/QtWidgets/qgraphicslayoutitem.h \
+ /usr/include/qt6/QtGui/qevent.h /usr/include/qt6/QtCore/qiodevice.h \
+ /usr/include/qt6/QtGui/qeventpoint.h /usr/include/qt6/QtGui/qvector2d.h \
+ /usr/include/qt6/QtGui/qvectornd.h \
+ /usr/include/qt6/QtGui/qpointingdevice.h \
+ /usr/include/qt6/QtGui/qinputdevice.h /usr/include/qt6/QtGui/qscreen.h \
+ /usr/include/qt6/QtCore/QList /usr/include/qt6/QtCore/qlist.h \
+ /usr/include/qt6/QtCore/QRect /usr/include/qt6/QtCore/qrect.h \
+ /usr/include/qt6/QtCore/QSize /usr/include/qt6/QtCore/qsize.h \
+ /usr/include/qt6/QtCore/QSizeF /usr/include/qt6/QtGui/QTransform \
+ /usr/include/qt6/QtGui/qtransform.h \
+ /usr/include/qt6/QtGui/qscreen_platform.h \
+ /usr/include/qt6/QtWidgets/qgraphicsitem.h \
+ /usr/include/qt6/QtGui/qpainterpath.h /usr/include/qt6/QtGui/QBrush \
+ /usr/include/qt6/QtGui/qbrush.h /usr/include/qt6/QtCore/QMargins \
+ /usr/include/qt6/QtCore/qmargins.h /usr/include/qt6/QtCharts/QChartView \
+ /usr/include/qt6/QtCharts/qchartview.h /usr/include/qt6/QtCharts/QChart \
+ /usr/include/qt6/QtWidgets/QGraphicsView \
+ /usr/include/qt6/QtWidgets/qgraphicsview.h \
+ /usr/include/qt6/QtGui/qpainter.h \
+ /usr/include/qt6/QtWidgets/qscrollarea.h \
+ /usr/include/qt6/QtWidgets/qgraphicsscene.h \
+ /usr/include/qt6/QtCharts/QPieSeries \
+ /usr/include/qt6/QtCharts/qpieseries.h \
+ /usr/include/qt6/QtCharts/QPieSlice \
+ /usr/include/qt6/QtCharts/qpieslice.h \
+ /usr/include/qt6/QtCharts/QPieSlice /usr/include/qt6/QtWidgets/QDialog \
+ /usr/include/qt6/QtWidgets/qdialog.h \
+ /usr/include/qt6/QtWidgets/QDialogButtonBox \
+ /usr/include/qt6/QtWidgets/qdialogbuttonbox.h

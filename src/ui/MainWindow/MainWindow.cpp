@@ -8,10 +8,12 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     startScreen = new StartScreen(this);
     profileScreen = new Profile(this);
     selectionScreen = new UserSelectionScreen(this);
+    usersPage = new UsersPage(this);
 
     stackedWidget->addWidget(startScreen);
     stackedWidget->addWidget(profileScreen);
     stackedWidget->addWidget(selectionScreen);
+    stackedWidget->addWidget(usersPage);
 
     setCentralWidget(stackedWidget);
 
@@ -20,6 +22,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     connect(selectionScreen, &UserSelectionScreen::backRequested, this, &MainWindow::goBackToStart);
     connect(profileScreen, &Profile::backRequested, this, &MainWindow::goBackToStart);
     connect(selectionScreen, &UserSelectionScreen::userSelected, this, &MainWindow::loadSelectedUserToProfile);
+    connect(profileScreen, &Profile::usersPageRequested, this, &MainWindow::goToUsersPage);
 }
 
 void MainWindow::goToProfileForm() {
@@ -38,4 +41,10 @@ void MainWindow::goBackToStart() {
 void MainWindow::loadSelectedUserToProfile(int userId) {
     profileScreen->loadUserFromDB(userId);
     stackedWidget->setCurrentWidget(profileScreen);
+}
+
+void MainWindow::goToUsersPage(){
+    profileScreen->saveUser();
+    usersPage->updateCharts(profileScreen->getCore());
+    stackedWidget->setCurrentWidget(usersPage);
 }

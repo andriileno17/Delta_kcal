@@ -17,12 +17,13 @@ class Profile: public QWidget{
     public:
         explicit Profile(QWidget *parent = nullptr);
         void loadUserFromDB(int userId);
+        void saveUser();
+
+        MetabolicCore& getCore();
 
     signals:
         void backRequested();
-
-    private slots:
-        void onButtonClicked();
+        void usersPageRequested();
 
     private:
         MetabolicCore core;

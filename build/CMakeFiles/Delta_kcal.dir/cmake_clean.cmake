@@ -21,6 +21,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.o.d"
   "CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o"
   "CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o.d"
+  "CMakeFiles/Delta_kcal.dir/src/ui/UsersPage/UsersPage.cpp.o"
+  "CMakeFiles/Delta_kcal.dir/src/ui/UsersPage/UsersPage.cpp.o.d"
   "Delta_kcal"
   "Delta_kcal.pdb"
   "Delta_kcal_autogen/mocs_compilation.cpp"

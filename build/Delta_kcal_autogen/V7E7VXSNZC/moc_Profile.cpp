@@ -42,14 +42,14 @@ template <> constexpr inline auto Profile::qt_create_metaobjectdata<qt_meta_tag_
         "Profile",
         "backRequested",
         "",
-        "onButtonClicked"
+        "usersPageRequested"
     };
 
     QtMocHelpers::UintData qt_methods {
         // Signal 'backRequested'
         QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
-        // Slot 'onButtonClicked'
-        QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Signal 'usersPageRequested'
+        QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -74,12 +74,14 @@ void Profile::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->backRequested(); break;
-        case 1: _t->onButtonClicked(); break;
+        case 1: _t->usersPageRequested(); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
         if (QtMocHelpers::indexOfMethod<void (Profile::*)()>(_a, &Profile::backRequested, 0))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (Profile::*)()>(_a, &Profile::usersPageRequested, 1))
             return;
     }
 }
@@ -119,5 +121,11 @@ int Profile::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 void Profile::backRequested()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+}
+
+// SIGNAL 1
+void Profile::usersPageRequested()
+{
+    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
 }
 QT_WARNING_POP

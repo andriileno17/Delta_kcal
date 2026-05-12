@@ -78,3 +78,10 @@ int MetabolicCore::getFat() const{
 int MetabolicCore::getCarbs() const{
     return carbs;
 }
+
+void MetabolicCore::copyDataFrom(MetabolicCore& other) {
+    this->delta = other.getDelta();
+    this->protein = other.getProtein();
+    this->fat = other.getFat();
+    this->carbs = other.getCarbs();
+}

@@ -23,6 +23,8 @@ class MetabolicCore: public QObject{
         int getFat() const;
         int getCarbs() const;
 
+        void copyDataFrom(MetabolicCore& other);
+
     private:
         int BMR;
         int TDEE;

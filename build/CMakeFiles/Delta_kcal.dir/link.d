@@ -11,8 +11,12 @@ Delta_kcal: \
   CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.o \
   CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.o \
   CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o \
-  /usr/lib64/libQt6Widgets.so.6.10.3 \
+  CMakeFiles/Delta_kcal.dir/src/ui/UsersPage/UsersPage.cpp.o \
   /usr/lib64/libQt6Sql.so.6.10.3 \
+  /usr/lib64/libQt6Charts.so.6.10.3 \
+  /usr/lib64/libQt6OpenGLWidgets.so.6.10.3 \
+  /usr/lib64/libQt6Widgets.so.6.10.3 \
+  /usr/lib64/libQt6OpenGL.so.6.10.3 \
   /usr/lib64/libQt6Gui.so.6.10.3 \
   /usr/lib64/libGLX.so \
   /usr/lib64/libOpenGL.so \
@@ -102,9 +106,17 @@ CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.o:
 
 CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o:
 
-/usr/lib64/libQt6Widgets.so.6.10.3:
+CMakeFiles/Delta_kcal.dir/src/ui/UsersPage/UsersPage.cpp.o:
 
 /usr/lib64/libQt6Sql.so.6.10.3:
+
+/usr/lib64/libQt6Charts.so.6.10.3:
+
+/usr/lib64/libQt6OpenGLWidgets.so.6.10.3:
+
+/usr/lib64/libQt6Widgets.so.6.10.3:
+
+/usr/lib64/libQt6OpenGL.so.6.10.3:
 
 /usr/lib64/libQt6Gui.so.6.10.3:
 

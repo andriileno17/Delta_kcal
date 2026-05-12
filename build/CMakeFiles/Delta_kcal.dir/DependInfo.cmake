@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/andriy/Desktop/Projects/Delta_kcal/src/ui/Profile/Profile.cpp" "CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.o" "gcc" "CMakeFiles/Delta_kcal.dir/src/ui/Profile/Profile.cpp.o.d"
   "/home/andriy/Desktop/Projects/Delta_kcal/src/ui/StartScreen/StartScreen.cpp" "CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.o" "gcc" "CMakeFiles/Delta_kcal.dir/src/ui/StartScreen/StartScreen.cpp.o.d"
   "/home/andriy/Desktop/Projects/Delta_kcal/src/ui/UserSelectionScreen/UserSelectionScreen.cpp" "CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o" "gcc" "CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.o.d"
+  "/home/andriy/Desktop/Projects/Delta_kcal/src/ui/UsersPage/UsersPage.cpp" "CMakeFiles/Delta_kcal.dir/src/ui/UsersPage/UsersPage.cpp.o" "gcc" "CMakeFiles/Delta_kcal.dir/src/ui/UsersPage/UsersPage.cpp.o.d"
   "" "Delta_kcal" "gcc" "CMakeFiles/Delta_kcal.dir/link.d"
   )
 

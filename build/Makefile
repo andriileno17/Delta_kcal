@@ -371,6 +371,30 @@ src/ui/UserSelectionScreen/UserSelectionScreen.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delta_kcal.dir/build.make CMakeFiles/Delta_kcal.dir/src/ui/UserSelectionScreen/UserSelectionScreen.cpp.s
 .PHONY : src/ui/UserSelectionScreen/UserSelectionScreen.cpp.s
 
+src/ui/UsersPage/UsersPage.o: src/ui/UsersPage/UsersPage.cpp.o
+.PHONY : src/ui/UsersPage/UsersPage.o
+
+# target to build an object file
+src/ui/UsersPage/UsersPage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delta_kcal.dir/build.make CMakeFiles/Delta_kcal.dir/src/ui/UsersPage/UsersPage.cpp.o
+.PHONY : src/ui/UsersPage/UsersPage.cpp.o
+
+src/ui/UsersPage/UsersPage.i: src/ui/UsersPage/UsersPage.cpp.i
+.PHONY : src/ui/UsersPage/UsersPage.i
+
+# target to preprocess a source file
+src/ui/UsersPage/UsersPage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delta_kcal.dir/build.make CMakeFiles/Delta_kcal.dir/src/ui/UsersPage/UsersPage.cpp.i
+.PHONY : src/ui/UsersPage/UsersPage.cpp.i
+
+src/ui/UsersPage/UsersPage.s: src/ui/UsersPage/UsersPage.cpp.s
+.PHONY : src/ui/UsersPage/UsersPage.s
+
+# target to generate assembly for a file
+src/ui/UsersPage/UsersPage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Delta_kcal.dir/build.make CMakeFiles/Delta_kcal.dir/src/ui/UsersPage/UsersPage.cpp.s
+.PHONY : src/ui/UsersPage/UsersPage.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -409,6 +433,9 @@ help:
 	@echo "... src/ui/UserSelectionScreen/UserSelectionScreen.o"
 	@echo "... src/ui/UserSelectionScreen/UserSelectionScreen.i"
 	@echo "... src/ui/UserSelectionScreen/UserSelectionScreen.s"
+	@echo "... src/ui/UsersPage/UsersPage.o"
+	@echo "... src/ui/UsersPage/UsersPage.i"
+	@echo "... src/ui/UsersPage/UsersPage.s"
 .PHONY : help
 
 
