@@ -9,6 +9,8 @@
 #include "UsersPage.h"
 #include "MetabolicCore.h"
 #include "User.h"
+#include "DataBaseManager.h"
+#include "StatisticsPage.h"
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
@@ -18,19 +20,23 @@ public:
 private:
     MetabolicCore core;
     User currentUser;
+    DataBaseManager *dbManager;
 
     QStackedWidget *stackedWidget;
     StartScreen *startScreen;
     Profile *profileScreen;
     UserSelectionScreen *selectionScreen;
     UsersPage *usersPage;
+    StatisticsPage *statisticsPage;
 
 private slots:
     void goToProfileForm();
     void goToSelectionScreen();
     void goBackToStart();
-    void loadSelectedUserToProfile(int userId);
+    void loadSelectedUser(int userId);
     void goToUsersPage();
+    void goToStatisticsPage();
+    void returnToUsersPage();
 };
 
 #endif

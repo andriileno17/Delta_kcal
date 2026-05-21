@@ -21,8 +21,6 @@ void UserSelectionScreen::updateList() {
     userList->clear(); 
     
     QMap<int, QString> users = dbManager.getAllUsers();
-
-    QMessageBox::information(this, "Дебаг списку", "База віддала користувачів: " + QString::number(users.size()));
     
     for (auto it = users.begin(); it != users.end(); ++it) {
         QString name = it.value();

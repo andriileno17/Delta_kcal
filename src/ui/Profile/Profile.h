@@ -21,6 +21,8 @@ class Profile: public QWidget{
 
         MetabolicCore& getCore();
 
+        int getCurrentUserId();
+
     signals:
         void backRequested();
         void usersPageRequested();

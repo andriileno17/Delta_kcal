@@ -83,7 +83,10 @@ void Profile::loadDataToUi(){
 void Profile::loadUserFromDB(int userId) {
     dbManager.setupDataBase();
     if (dbManager.loadUser(currentUser, userId)) {
+        currentUser.setId(userId);
         loadDataToUi();
+
+        core.calculateNorm(currentUser);
     }
 }
 
@@ -104,4 +107,8 @@ void Profile::saveUser(){
 
 MetabolicCore& Profile::getCore(){
     return core;
+}
+
+int Profile::getCurrentUserId(){
+    return currentUser.getId();
 }

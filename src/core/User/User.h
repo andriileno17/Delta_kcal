@@ -9,6 +9,7 @@ class User: public QObject{
     public:
         explicit User(QObject *parent = nullptr);
 
+        void setId(int id);
         void setUserName(QString inputUserName);
         void setSex(bool inputSex);
         void setBodyWeight(double inputBodyWeight);
@@ -17,6 +18,7 @@ class User: public QObject{
         void setActivityCoefficient(double inputActivityCoefficient);
         void setGoal(int inputGoal);
 
+        int getId() const;
         QString getUserName() const;
         bool getSex() const;
         double getBodyWeight() const;

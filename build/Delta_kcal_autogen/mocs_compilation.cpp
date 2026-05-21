@@ -4,5 +4,6 @@
 #include "MH3S2VXQKY/moc_MainWindow.cpp"
 #include "V7E7VXSNZC/moc_Profile.cpp"
 #include "L52M4CM6L4/moc_StartScreen.cpp"
+#include "SFMF7TD2T2/moc_StatisticsPage.cpp"
 #include "LHQJZTSL7E/moc_UserSelectionScreen.cpp"
 #include "3EAE5GRNWQ/moc_UsersPage.cpp"

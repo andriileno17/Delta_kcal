@@ -14,6 +14,7 @@
 #include <QFormLayout>
 #include <QSpinBox>
 #include <QDialogButtonBox>
+#include "DataBaseManager.h"
 #include "MetabolicCore.h"
 #include "User.h"
 #include "Profile.h"
@@ -24,13 +25,26 @@ class UsersPage: public QWidget{
         explicit UsersPage(QWidget *parent = nullptr);
         void updateCharts(MetabolicCore& updatedCore);
 
+        void setActiveUserId(int id);
+
+        void loadEatenData(int k, int p, int f, int c);
+
+    signals:
+        void backRequested();
+        void statisticsRequested();
+
     private slots:
         void onAddMealClicked();
+        void onUpdateWeightClicked();
 
     private:
+        DataBaseManager dbManager;
         MetabolicCore core;
         User user;
         Profile *profile;
+        DailyLog *currentLog;
+
+        int currentUserId;
 
         int totalKcal;
         int kcalEaten;
@@ -46,6 +60,8 @@ class UsersPage: public QWidget{
 
         QPushButton *goToStatistics;
         QPushButton *addMeal;
+        QPushButton *backButton;
+        QPushButton *updateWeight;
 
         QPieSeries *kcalSeries;
         QChart *kcalChart;
@@ -64,7 +80,9 @@ class UsersPage: public QWidget{
         QChartView *carbsView;
 
         QVBoxLayout *pageLayout;
-        QHBoxLayout *diagramLayout;  
+        QHBoxLayout *diagramLayout;
+
+        void loadData();
 };
 
 #endif

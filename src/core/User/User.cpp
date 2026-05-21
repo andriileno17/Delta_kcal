@@ -10,6 +10,10 @@ User::User(QObject *parent) : QObject(parent){
     goal = 0;
 }
 
+void User::setId(int id){
+    userId = id;
+}
+
 void User::setUserName(QString inputUserName){
     userName = inputUserName;
 }
@@ -64,4 +68,8 @@ double User::getActivityCoefficient() const{
 
 int User::getGoal() const{
     return goal;
+}
+
+int User::getId() const{
+    return userId;
 }

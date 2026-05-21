@@ -9,11 +9,13 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     profileScreen = new Profile(this);
     selectionScreen = new UserSelectionScreen(this);
     usersPage = new UsersPage(this);
+    statisticsPage = new StatisticsPage(this);
 
     stackedWidget->addWidget(startScreen);
     stackedWidget->addWidget(profileScreen);
     stackedWidget->addWidget(selectionScreen);
     stackedWidget->addWidget(usersPage);
+    stackedWidget->addWidget(statisticsPage);
 
     setCentralWidget(stackedWidget);
 
@@ -21,8 +23,11 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     connect(startScreen, &StartScreen::loadUserRequested, this, &MainWindow::goToSelectionScreen);
     connect(selectionScreen, &UserSelectionScreen::backRequested, this, &MainWindow::goBackToStart);
     connect(profileScreen, &Profile::backRequested, this, &MainWindow::goBackToStart);
-    connect(selectionScreen, &UserSelectionScreen::userSelected, this, &MainWindow::loadSelectedUserToProfile);
+    connect(selectionScreen, &UserSelectionScreen::userSelected, this, &MainWindow::loadSelectedUser);
     connect(profileScreen, &Profile::usersPageRequested, this, &MainWindow::goToUsersPage);
+    connect(usersPage, &UsersPage::backRequested, this, &MainWindow::goToSelectionScreen);
+    connect(usersPage, &UsersPage::statisticsRequested, this, &MainWindow::goToStatisticsPage);
+    connect(statisticsPage, &StatisticsPage::backRequested, this, &MainWindow::returnToUsersPage);
 }
 
 void MainWindow::goToProfileForm() {
@@ -34,17 +39,37 @@ void MainWindow::goToSelectionScreen() {
     stackedWidget->setCurrentWidget(selectionScreen);
 }
 
-void MainWindow::goBackToStart() {
-    stackedWidget->setCurrentWidget(startScreen);
+void MainWindow::loadSelectedUser(int userId){
+    profileScreen->loadUserFromDB(userId);
+
+    int k = 0, p = 0, f = 0, c = 0;
+    QDate today = QDate::currentDate();
+
+    dbManager->loadDailyLog(userId, today, k, p, f, c);
+
+    usersPage->setActiveUserId(userId);
+    usersPage->loadEatenData(k, p, f, c);
+    usersPage->updateCharts(profileScreen->getCore());
+
+    stackedWidget->setCurrentWidget(usersPage);
 }
 
-void MainWindow::loadSelectedUserToProfile(int userId) {
-    profileScreen->loadUserFromDB(userId);
-    stackedWidget->setCurrentWidget(profileScreen);
+void MainWindow::goBackToStart() {
+    stackedWidget->setCurrentWidget(startScreen);
 }
 
 void MainWindow::goToUsersPage(){
     profileScreen->saveUser();
     usersPage->updateCharts(profileScreen->getCore());
+    usersPage->setActiveUserId(profileScreen->getCurrentUserId());
+    stackedWidget->setCurrentWidget(usersPage);
+}
+
+void MainWindow::goToStatisticsPage(){
+    statisticsPage->loadStatistics(profileScreen->getCurrentUserId(), dbManager);
+    stackedWidget->setCurrentWidget(statisticsPage);
+}
+
+void MainWindow::returnToUsersPage(){
     stackedWidget->setCurrentWidget(usersPage);
 }

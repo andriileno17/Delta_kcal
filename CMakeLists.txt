@@ -20,7 +20,9 @@ add_executable(Delta_kcal
     src/core/User/User.h
     src/core/DataBaseManager/DataBaseManager.cpp
     src/core/DataBaseManager/DataBaseManager.h
-    
+    src/core/DailyLog/DailyLog.cpp
+    src/core/DailyLog/DailyLog.h 
+
     src/ui/MainWindow/MainWindow.cpp
     src/ui/MainWindow/MainWindow.h
     src/ui/StartScreen/StartScreen.cpp
@@ -31,17 +33,21 @@ add_executable(Delta_kcal
     src/ui/UserSelectionScreen/UserSelectionScreen.h
     src/ui/UsersPage/UsersPage.cpp
     src/ui/UsersPage/UsersPage.h
+    src/ui/StatisticsPage/StatisticsPage.cpp
+    src/ui/StatisticsPage/StatisticsPage.h 
 )
 
 target_include_directories(Delta_kcal PRIVATE
     src/core/MetabolicCore
     src/core/User
     src/core/DataBaseManager
+    src/core/DailyLog
     src/ui/MainWindow
     src/ui/StartScreen
     src/ui/Profile
     src/ui/UserSelectionScreen
     src/ui/UsersPage
+    src/ui/StatisticsPage
 )
 
 target_link_libraries(Delta_kcal Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Gui Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::Sql Qt6::Charts)
